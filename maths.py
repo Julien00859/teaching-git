@@ -13,14 +13,14 @@ def sign(n, zero=1):
 
 def mul(a, b):
     c = 0
-    for _ in range(b):
-        c += a
+    for _ in range(abs(b)):
+        c += a * sign(b)
     return c
 
 
-def sign(n, zero=1):
+def sign(n, sign_zero=1):
     if not n:
-        return zero
+        return sign_zero
     return n / abs(n)
 
 
@@ -37,5 +37,8 @@ if __name__ == '__main__':
         assert mul(1, 0) == 0
         assert mul(0, 1) == 0
         assert mul(2, 6) == 12
+        assert mul(-2, 6) == -12
+        assert mul(6, -2) == -12
+        assert mul(-2, -6) == 12
         assert sign(1) == 1
         assert sign(-1) == -1
