@@ -11,6 +11,13 @@ def sign(n, zero=1):
     return n / abs(n)
 
 
+def mul(a, b):
+    c = 0
+    for _ in range(b):
+        c += a
+    return c
+
+
 if __name__ == '__main__':
     import sys
     if '--test' in sys.argv:
@@ -21,3 +28,6 @@ if __name__ == '__main__':
         assert sub(0, 1) == -1
         assert sign(1) == 1
         assert sign(-1) == -1
+        assert mul(1, 0) == 0
+        assert mul(0, 1) == 0
+        assert mul(2, 6) == 12
