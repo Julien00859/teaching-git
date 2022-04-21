@@ -16,6 +16,8 @@ def mul(a, b):
     for _ in range(abs(b)):
         c += a * sign(b)
     return c
+def square(a):
+    return a ** 2
 
 
 if __name__ == '__main__':
