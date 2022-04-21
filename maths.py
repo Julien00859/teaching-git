@@ -37,3 +37,7 @@ if __name__ == '__main__':
         assert mul(-2, 6) == -12
         assert mul(6, -2) == -12
         assert mul(-2, -6) == 12
+        assert exp(0,0) == 1
+        assert exp(1,0) == 1
+        assert exp(3,-2) == -9
+
