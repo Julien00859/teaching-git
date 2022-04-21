@@ -18,6 +18,9 @@ def sign(n, zero=1):
 def sub(a, b):
     return a - b
 
+def exp (a,b):
+    return a**b
+
 
 if __name__ == '__main__':
     import sys
@@ -30,6 +33,9 @@ if __name__ == '__main__':
         assert mul(-2, 6) == -12
         assert mul(6, -2) == -12
         assert mul(-2, -6) == 12
+        assert exp(0,0) == 1
+        assert exp(1,0) == 1
+        assert exp(3,-2) == -9
         assert sign(1) == 1
         assert sign(-1) == -1
         assert sub(0, 0) == 0
