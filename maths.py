@@ -17,6 +17,8 @@ def mul(a, b):
         c += a * sign(b)
     return c
 
+def exp(a):
+    return a*a
 
 if __name__ == '__main__':
     import sys
