@@ -36,3 +36,6 @@ if __name__ == '__main__':
         assert mul(-2, 6) == -12
         assert mul(6, -2) == -12
         assert mul(-2, -6) == 12
+        assert exp(2) == 4
+        assert exp(6) == 36
+        assert exp(40) == 1600
