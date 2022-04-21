@@ -16,6 +16,8 @@ def mul(a, b):
     for _ in range(abs(b)):
         c += a * sign(b)
     return c
+def square(a):
+    return a ** 2
 
 
 if __name__ == '__main__':
@@ -34,3 +36,8 @@ if __name__ == '__main__':
         assert mul(-2, 6) == -12
         assert mul(6, -2) == -12
         assert mul(-2, -6) == 12
+        assert square(2) == 4
+        assert square(0) == 0
+        assert square(-3) == 9
+        assert square(0.5) == 0.25
+        
