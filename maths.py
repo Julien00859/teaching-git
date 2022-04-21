@@ -17,6 +17,8 @@ def mul(a, b):
         c += a * sign(b)
     return c
 
+def carre(a):
+    return (a**2)
 
 if __name__ == '__main__':
     import sys
