@@ -17,6 +17,8 @@ def mul(a, b):
         c += a * sign(b)
     return c
 
+def carre(a):
+    return (a**2)
 
 if __name__ == '__main__':
     import sys
@@ -34,3 +36,7 @@ if __name__ == '__main__':
         assert mul(-2, 6) == -12
         assert mul(6, -2) == -12
         assert mul(-2, -6) == 12
+        assert carre(2) == 4
+        assert carre(-2) == 4
+        assert carre(4) == 16
+        assert carre(0) == 0
