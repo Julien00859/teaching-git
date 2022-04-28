@@ -19,6 +19,9 @@ def sub(a, b):
     return a - b
 
 
+def sq (a):
+    return a**2
+
 if __name__ == '__main__':
     import sys
     if '--test' in sys.argv:
