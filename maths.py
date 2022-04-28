@@ -7,6 +7,8 @@ def mul(a, b):
     for _ in range(abs(b)):
         c += a * sign(b)
     return c
+def sub(a, b):
+    return a - b
 
 
 def sign(n, zero=1):
@@ -17,6 +19,7 @@ def sign(n, zero=1):
 
 def sub(a, b):
     return a - b
+
 
 def sqr(q):
     return q**2
@@ -38,3 +41,7 @@ if __name__ == '__main__':
         assert sub(0, 0) == 0
         assert sub(1, 0) == 1
         assert sub(0, 1) == -1
+        assert sqr(2) == 4
+        assert sqr(-2) == 4
+        assert sqr(1/2) == 1/4
+        assert sqr(0) == 0
