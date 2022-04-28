@@ -9,11 +9,6 @@ def mul(a, b):
     return c
 
 
-def sign(n, zero=1):
-    if not n:
-        return zero
-    return n / abs(n)
-
 
 def sub(a, b):
     return a - b
@@ -21,6 +16,15 @@ def sub(a, b):
 
 def sq (a):
     return a**2
+    
+def sign(n, zero=1):
+    if not n:
+        return zero
+    return n / abs(n)
+
+
+def plus1(a):
+    return a+1
 
 if __name__ == '__main__':
     import sys
