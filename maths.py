@@ -14,9 +14,11 @@ def sign(n, zero=1):
         return zero
     return n / abs(n)
 
-
 def sub(a, b):
     return a - b
+    
+def exp(a):
+    return a * a
 
 
 if __name__ == '__main__':
