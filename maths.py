@@ -38,3 +38,6 @@ if __name__ == '__main__':
         assert sub(0, 0) == 0
         assert sub(1, 0) == 1
         assert sub(0, 1) == -1
+        assert exp(0) == 0
+        assert exp(2) == 4
+        assert exp(-3) == 9
