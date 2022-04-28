@@ -18,6 +18,11 @@ def sign(n, zero=1):
 def sub(a, b):
     return a - b
 
+def square(a):
+    if a!=0 : 
+        return a**2
+    else : 
+        return 0
 
 if __name__ == '__main__':
     import sys
