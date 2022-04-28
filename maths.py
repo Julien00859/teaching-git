@@ -16,7 +16,8 @@ def mul(a, b):
     for _ in range(abs(b)):
         c += a * sign(b)
     return c
-
+def pow(a, b):
+    return a ** b
 
 if __name__ == '__main__':
     import sys
