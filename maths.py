@@ -18,6 +18,9 @@ def sign(n, zero=1):
 def sub(a, b):
     return a - b
 
+def exp(a):
+    return a*a
+
 
 if __name__ == '__main__':
     import sys
