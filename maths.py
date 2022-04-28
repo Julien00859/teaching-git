@@ -17,6 +17,9 @@ def mul(a, b):
         c += a
     return c
 
+def square(a):
+    return a*a
+
 
 if __name__ == '__main__':
     import sys
@@ -31,3 +34,7 @@ if __name__ == '__main__':
         assert mul(1, 0) == 0
         assert mul(0, 1) == 0
         assert mul(2, 6) == 12
+        assert square(2) == 4
+        assert square(-2) == 4
+        assert square(0) == 0
+        assert square(0.5) == 0.25
