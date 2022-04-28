@@ -17,6 +17,9 @@ def mul(a, b):
         c += a
     return c
 
+def carre(a):
+    return(a**2)
+
 
 if __name__ == '__main__':
     import sys
@@ -31,3 +34,7 @@ if __name__ == '__main__':
         assert mul(1, 0) == 0
         assert mul(0, 1) == 0
         assert mul(2, 6) == 12
+        assert carre(2) == 4
+        assert carre(-2) == 4
+        assert carre(0) == 0
+        assert carre(1.5) == 2.25
