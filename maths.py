@@ -18,6 +18,10 @@ def mul(a, b):
     return c
 
 
+def square(x):
+    return x ** 2
+
+
 if __name__ == '__main__':
     import sys
     if '--test' in sys.argv:
@@ -34,3 +38,4 @@ if __name__ == '__main__':
         assert mul(-2, 6) == -12
         assert mul(6, -2) == -12
         assert mul(-2, -6) == 12
+        assert square(2) == 4
