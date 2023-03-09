@@ -2,7 +2,7 @@ def add(a, b):
     """ Compute the sum of two numbers """
     return a + b
 
-def div(a, b):
+def division(a, b):
     """ Compute the quotient of two numbers """
     if b == 0:
         raise DivisionByZeroError()
